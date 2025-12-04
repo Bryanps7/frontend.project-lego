@@ -76,7 +76,7 @@ function login() {
         password
     }
 
-    fetch('http://localhost:3000/login', {
+    fetch('https://backecombryan-production.up.railway.app/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -201,7 +201,7 @@ function registrar() {
         cpf
     }
 
-    fetch('http://localhost:3000/user', {
+    fetch('https://backecombryan-production.up.railway.app/user', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

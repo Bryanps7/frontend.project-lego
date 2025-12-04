@@ -28,7 +28,7 @@ create.addEventListener('click', (e) => {
 
     console.log(dados);
 
-    fetch('http://localhost:3000/product', {
+    fetch('https://backecombryan-production.up.railway.app/product', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

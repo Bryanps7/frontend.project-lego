@@ -1,6 +1,6 @@
 const destaques = document.getElementById('destaques')
 
-fetch('http://localhost:3000/product')
+fetch('https://backecombryan-production.up.railway.app/product')
     .then(resp => resp.json())
     .then(dados => {
         destaques.innerHTML = ''

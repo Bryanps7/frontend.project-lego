@@ -16,7 +16,7 @@ create.addEventListener('click', (e) => {
 
     console.log(dados);
 
-    fetch('http://localhost:3000/category', {
+    fetch('https://backecombryan-production.up.railway.app/category', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ create.addEventListener('click', (e) => {
 window.addEventListener('load', (e) => { e.preventDefault(), read() })
 
 async function read() {
-    fetch('http://localhost:3000/category', {
+    fetch('https://backecombryan-production.up.railway.app/category', {
         headers: {
             'Authorization': 'Bearer ' + token
         }
@@ -93,7 +93,7 @@ search.addEventListener('click', (e) => {
 
     const campo = document.getElementById('campoS').value
 
-    fetch('http://localhost:3000/category/search?s=' + campo, {
+    fetch('https://backecombryan-production.up.railway.app/category/search?s=' + campo, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -160,7 +160,7 @@ update.addEventListener('click', (e) => {
 
     console.log(dados);
 
-    fetch('http://localhost:3000/category/' + id, {
+    fetch('https://backecombryan-production.up.railway.app/category/' + id, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -209,7 +209,7 @@ delet.addEventListener('click', (e) => {
     const cofirm = confirm('Tem Certeza que desejá apagar esse Produto?')
 
     if (cofirm) {
-        fetch('http://localhost:3000/category/' + id, {
+        fetch('https://backecombryan-production.up.railway.app/category/' + id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
